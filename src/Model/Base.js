@@ -163,7 +163,7 @@ class BaseModel {
       schema: this._schema
     })
 
-    return mongoose.model(name, this._schema)
+    return mongoose.model(name, this._schema, name)
   }
 
   static index (...args) {
